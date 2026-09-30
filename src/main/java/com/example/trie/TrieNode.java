@@ -5,5 +5,5 @@ import java.util.Map;
 
 class TrieNode {
     final Map<Character, TrieNode> children = new HashMap<>();
-    boolean isEndOfWord = false;
+    boolean isTerminus = false;
 }

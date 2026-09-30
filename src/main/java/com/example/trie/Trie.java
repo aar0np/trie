@@ -9,7 +9,7 @@ public class Trie {
         for (char ch : word.toCharArray()) {
             current = current.children.computeIfAbsent(ch, c -> new TrieNode());
         }
-        current.isEndOfWord = true;
+        current.isTerminus = true;
     }
 
     /**
@@ -25,6 +25,6 @@ public class Trie {
                 return false;
             }
         }
-        return current.isEndOfWord;
+        return current.isTerminus;
     }
 }
